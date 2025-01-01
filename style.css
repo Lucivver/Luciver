@@ -23,12 +23,13 @@ table
 {
 	width: 20%;
 	align-items: center;
+	height: 1rem;
+	padding-top: 3rem;
 }
 body
 {
 	display: flex;
             justify-content: center;
-            align-items: center;
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
@@ -106,17 +107,17 @@ img
 }
 .wrapper
 {
-	top: 35rem;
+	top: 30rem;
 	position: absolute;
 	width: 100%;
 	max-width: 1546px;
 	margin-inline: auto;
 	height: 400px;
-	margin-top: 2rem;
+	padding-top: 4rem;
+	margin-top: 4rem;
 	overflow: hidden;
 	border-radius: 10px;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 3rem;
 }
 
 @keyframes scrollleft {
