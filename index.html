@@ -1,172 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+	Luciver</title>
+	<link rel="icon" href="profile.jpg">
+	<meta name="description" content="Get To Know More About Luciver.">
+</head>
+<body>
+<script type="text/javascript">document.addEventListener('wheel', function(event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+}, { passive: false });
 
-@font-face
-{
-	font-family: "Belgietta";
-	src: url(./Font/Belgietta_dafont.ttf);
-}
-@font-face
-{
-	font-family: "ptsansbold";
-	src: url(./Font/pt-sans-bold.ttf);
-}
-@font-face
-{
-	font-family: "Motte";
-	src: url(./Font/MotteFontDemo.ttf);
-}
-@font-face
-{
-	font-family: "SlimLines";
-	src: url(./Font/Slimlines.ttf);
-}
-table
-{
-	width: 20%;
-	align-items: center;
-	height: 1rem;
-	padding-top: 3rem;
-}
-body
-{
-	display: flex;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-}
-.profile{
-table
-{
-	margin-left: auto;
-	margin-right: auto;
-}
-img
-{
-	height: auto;
-	max-width: 100%;
-	width: 100px;
-	border-radius: 50%;
-}}
-h1
-{
-	font-family: SlimLines;
-	text-align: center;
-	font-weight: lighter;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 2rem;
-
-	@media (width >= 40em) {
-	font-size: 2rem
-	}
-	@media (width >= 60em) {
-	font-size: 3rem
-	}
-}
-p
-{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-}
-[Name="Tombol"]
-{
-	height: 100px;
-	width: 100px;
-	border-radius: 10%;
-	background-color: rgba(255, 255, 255, 0.3);
-	border: none;
-	backdrop-filter: blur(5px);
-	color: black;
-	justify-content: center;
-    align-items: center;
-    font-family: ptsansbold;
-    margin: 0.5rem;
-}
-[Name="Tombol"]:hover
-{
-	background-color: white;
-	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
-	transform: scale(1.1);
-}
-.item{
-	width: 400px;
-	height: 400px;
-	background-color: red;
-	border-radius: 10px;
-	position: absolute;
-	left: max(calc(350px * 5), 100%);
-	animation-name: scrollleft;
-	animation-duration: 60s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-}
-img
-{
-	border-radius: 10px;
-}
-.wrapper
-{
-	top: 30rem;
-	position: absolute;
-	width: 100%;
-	max-width: 1546px;
-	margin-inline: auto;
-	height: 400px;
-	padding-top: 4rem;
-	margin-top: 5rem;
-	overflow: hidden;
-	border-radius: 10px;
-	padding-bottom: 3rem;
-
-	@media (width >= 40em) {
-	padding-top: 6rem;
-	}
-}
-
-@keyframes scrollleft {
-	to {
-		left: -400px;
-	}
-}
-
-.gambar1 {
-	animation-delay: calc(60s / 5 * (5 - 1) * -1);
-}
-.gambar2 {
-	animation-delay: calc(60s / 5 * (5 - 2) * -1);
-}
-.gambar3 {
-	animation-delay: calc(60s / 5 * (5 - 3) * -1);
-}
-.gambar4 {
-	animation-delay: calc(60s / 5 * (5 - 4) * -1);
-}
-.gambar5 {
-	animation-delay: calc(60s / 5 * (5 - 5) * -1);
-}
-.gambar1:hover
-{
-	transform: scale(1.1);
-}
-.gambar2:hover
-{
-	transform: scale(1.1);
-}
-.gambar3:hover
-{
-	transform: scale(1.1);
-}
-.gambar4:hover
-{
-	transform: scale(1.1);
-}
-.gambar5:hover
-	{
-	transform: scale(1.1);
-}
-.wrappasder:hover
-.item
-{
-	animation-play-state: paused;
-}}
+document.addEventListener('keydown', function(event) {
+    if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
+        event.preventDefault();
+    }
+});</script>
+<link rel="stylesheet" style="text/css" href="style.css">
+		<table>
+	<tr>
+		<td colspan="3" align="center">
+			<div class="profile">
+			<img src="profile.jpg">
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div class="nama"><h1>LUCIVER</h1><div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<p>Skibidi</p>
+		</td>
+	</tr>
+		<tr>
+			<td colspan="3" align="center">
+				<P><u>Social Media Profile</u></p>
+			</td>
+		<tr>
+	<tr>
+		<td>
+			<button name="Tombol" onclick="window.location.href='https://www.instagram.com/lucivver_';"><img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"><br><font>Lucivver</font></button>
+		</td>
+		<td>
+			<button name="Tombol" onclick="window.location.href='https://www.Facebook.com/Hikaren69';"><img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"><br><font>Hitori Kakuren</font></button>
+		</td>
+		<td>
+			<button name="Tombol" onclick="window.location.href='https://x.com/Lucky4lucifer';"><img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/1024px-X_logo_2023.svg.png"><br><font >Lucky4lucifer</font></button></td></tr>
+		<tr>
+			<td colspan="3" align="center">
+				<P><u>Contact</u></p>
+			</td>
+		<tr>
+			<td align=center colspan="3">
+				<button name="Tombol" onclick="window.location.href='https://api.whatsapp.com/send/?phone=6285179769545&text&type=phone_number&app_absent=0';"><img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1024px-WhatsApp_logo-color-vertical.svg.png"><br><font >WhatsApp</font></button>
+				<button name="Tombol" onclick="window.location.href='https://discordapp.com/users/617624176374579201';"><img width="50px" src="https://streetwork-schwaz.at/wp-content/uploads/2023/10/discord-logo-1-1-3902126490.png"><br><font >WhatsApp</font></button>
+			</td>
+		</tr>
+			<div class="wrapper">
+				<div class="item gambar1">
+    			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/471822111_596272136149997_7808661658404777895_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=iDFuC3MdwokQ7kNvgEIa20A&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AH6W8NLWPaRi3Hko3uixgLy&oh=00_AYBwoE21ViPqSFoLja9lsyEjm8UveZZMq8LgV80M78dbpQ&oe=677A0BE5" target="_blank">
+        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/471822111_596272136149997_7808661658404777895_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=iDFuC3MdwokQ7kNvgEIa20A&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AH6W8NLWPaRi3Hko3uixgLy&oh=00_AYBwoE21ViPqSFoLja9lsyEjm8UveZZMq8LgV80M78dbpQ&oe=677A0BE5" alt="Image 1">
+    			</a>
+				</div>
+				<div class="item gambar2">
+    			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/472129715_597042176072993_7246232661390529166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1pbaRl4JKbkQ7kNvgErDyYx&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AWdsHUeSZ4YkNc8XuH29sQ3&oh=00_AYBFT14XwO_KYrPeVX7Y2paNmxMUDIjbF0JDUxfMhYJpYw&oe=6779FEEA" target="_blank">
+        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/472129715_597042176072993_7246232661390529166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1pbaRl4JKbkQ7kNvgErDyYx&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AWdsHUeSZ4YkNc8XuH29sQ3&oh=00_AYBFT14XwO_KYrPeVX7Y2paNmxMUDIjbF0JDUxfMhYJpYw&oe=6779FEEA" alt="Image 2">
+    			</a>
+				</div>
+				<div class="item gambar3">
+    			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" target="_blank">
+        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" alt="Image 3">
+    			</a>
+				</div>
+				<div class="item gambar4">
+    			<a href="https://lucivver.github.io/Luciver/gambar%20(2).jpeg" target="_blank">
+        		<img width="400" src="https://lucivver.github.io/Luciver/gambar%20(2).jpeg"" alt="Image 4">
+    			</a>
+				</div>
+				<div class="item gambar5">
+    			<a href="https://lucivver.github.io/Luciver/gambar%20(2).jpeg" target="_blank">
+        		<img width="400" src="https://lucivver.github.io/Luciver/gambar%20(2).jpeg"" alt="Image 5">
+    			</a>
+				</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
