@@ -114,10 +114,14 @@ img
 	margin-inline: auto;
 	height: 400px;
 	padding-top: 4rem;
-	margin-top: 4rem;
+	margin-top: 5rem;
 	overflow: hidden;
 	border-radius: 10px;
 	padding-bottom: 3rem;
+
+	@media (width >= 40em) {
+	padding-top: 6rem;
+	}
 }
 
 @keyframes scrollleft {
