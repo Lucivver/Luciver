@@ -1,0 +1,167 @@
+
+@font-face
+{
+	font-family: "Belgietta";
+	src: url(./Font/Belgietta_dafont.ttf);
+}
+@font-face
+{
+	font-family: "ptsansbold";
+	src: url(./Font/pt-sans-bold.ttf);
+}
+@font-face
+{
+	font-family: "Motte";
+	src: url(./Font/MotteFontDemo.ttf);
+}
+@font-face
+{
+	font-family: "SlimLines";
+	src: url(./Font/Slimlines.ttf);
+}
+table
+{
+	width: 20%;
+	align-items: center;
+}
+body
+{
+	display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+}
+.profile{
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+img
+{
+	height: auto;
+	max-width: 100%;
+	width: 100px;
+	border-radius: 50%;
+}}
+h1
+{
+	font-family: SlimLines;
+	text-align: center;
+	font-weight: lighter;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 2rem;
+
+	@media (width >= 40em) {
+	font-size: 2rem
+	}
+	@media (width >= 60em) {
+	font-size: 3rem
+	}
+}
+p
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+[Name="Tombol"]
+{
+	height: 100px;
+	width: 100px;
+	border-radius: 10%;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	backdrop-filter: blur(5px);
+	color: black;
+	justify-content: center;
+    align-items: center;
+    font-family: ptsansbold;
+    margin: 0.5rem;
+}
+[Name="Tombol"]:hover
+{
+	background-color: white;
+	box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+	transform: scale(1.1);
+}
+.item{
+	width: 400px;
+	height: 400px;
+	background-color: red;
+	border-radius: 10px;
+	position: absolute;
+	left: max(calc(350px * 5), 100%);
+	animation-name: scrollleft;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+img
+{
+	border-radius: 10px;
+}
+.wrapper
+{
+	top: 35rem;
+	position: absolute;
+	width: 100%;
+	max-width: 1546px;
+	margin-inline: auto;
+	height: 400px;
+	margin-top: 2rem;
+	overflow: hidden;
+	border-radius: 10px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+@keyframes scrollleft {
+	to {
+		left: -400px;
+	}
+}
+
+.gambar1 {
+	animation-delay: calc(60s / 5 * (5 - 1) * -1);
+}
+.gambar2 {
+	animation-delay: calc(60s / 5 * (5 - 2) * -1);
+}
+.gambar3 {
+	animation-delay: calc(60s / 5 * (5 - 3) * -1);
+}
+.gambar4 {
+	animation-delay: calc(60s / 5 * (5 - 4) * -1);
+}
+.gambar5 {
+	animation-delay: calc(60s / 5 * (5 - 5) * -1);
+}
+.gambar1:hover
+{
+	transform: scale(1.1);
+}
+.gambar2:hover
+{
+	transform: scale(1.1);
+}
+.gambar3:hover
+{
+	transform: scale(1.1);
+}
+.gambar4:hover
+{
+	transform: scale(1.1);
+}
+.gambar5:hover
+	{
+	transform: scale(1.1);
+}
+.wrappasder:hover
+.item
+{
+	animation-play-state: paused;
+}}
