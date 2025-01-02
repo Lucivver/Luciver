@@ -19,6 +19,21 @@ document.addEventListener('keydown', function(event) {
     if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
         event.preventDefault();
     }
+  const button = document.getElementById("itemhover");
+
+  button.addEventListener("touchstart", () => {
+    button.classList.add("hover");
+  });
+
+  button.addEventListener("touchend", () => {
+    button.classList.remove("hover");
+  });
+  document.querySelector('.wrapper').addEventListener('wheel', function (event) {
+  if (event.deltaY !== 0) {
+    this.scrollLeft += event.deltaY;
+    event.preventDefault();
+  }
+  document.getElementById('gambar').setAttribute('draggable', false);
 });</script>
 <link rel="stylesheet" style="text/css" href="style.css">
 		<table>
@@ -59,39 +74,39 @@ document.addEventListener('keydown', function(event) {
 			</td>
 		<tr>
 			<td align=center colspan="3">
-				<button name="Tombol" onclick="window.location.href='https://api.whatsapp.com/send/?phone=6285179769545&text&type=phone_number&app_absent=0';"><img width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1024px-WhatsApp_logo-color-vertical.svg.png"><br><font >WhatsApp</font></button>
-				<button name="Tombol" onclick="window.location.href='https://discordapp.com/users/617624176374579201';"><img width="50px" src="https://streetwork-schwaz.at/wp-content/uploads/2023/10/discord-logo-1-1-3902126490.png"><br><font >WhatsApp</font></button>
+				<button name="Tombol" onclick="window.location.href='https://api.whatsapp.com/send/?phone=6285179769545&text&type=phone_number&app_absent=0';"><img id="gambar" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1024px-WhatsApp_logo-color-vertical.svg.png"><br><font >WhatsApp</font></button>
+				<button name="Tombol" onclick="window.location.href='https://discordapp.com/users/617624176374579201';"><img width="50px" src="https://streetwork-schwaz.at/wp-content/uploads/2023/10/discord-logo-1-1-3902126490.png"><br><font >Discord</font></button>
 			</td>
 		</tr>
-			<div class="wrapper">
-				<div class="item gambar1">
+			<div class="wrapper" id="wrapper">
+				<div id="itemhover" class="item gambar1">
     			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/471822111_596272136149997_7808661658404777895_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=iDFuC3MdwokQ7kNvgEIa20A&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AH6W8NLWPaRi3Hko3uixgLy&oh=00_AYBwoE21ViPqSFoLja9lsyEjm8UveZZMq8LgV80M78dbpQ&oe=677A0BE5" target="_blank">
-        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/471822111_596272136149997_7808661658404777895_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=iDFuC3MdwokQ7kNvgEIa20A&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AH6W8NLWPaRi3Hko3uixgLy&oh=00_AYBwoE21ViPqSFoLja9lsyEjm8UveZZMq8LgV80M78dbpQ&oe=677A0BE5" alt="Image 1">
+        		<img id="gambar" width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/471822111_596272136149997_7808661658404777895_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=iDFuC3MdwokQ7kNvgEIa20A&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AH6W8NLWPaRi3Hko3uixgLy&oh=00_AYBwoE21ViPqSFoLja9lsyEjm8UveZZMq8LgV80M78dbpQ&oe=677A0BE5" alt="Image 1">
     			</a>
 				</div>
-				<div class="item gambar2">
+				<div id="itemhover" class="item gambar2">
     			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/472129715_597042176072993_7246232661390529166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1pbaRl4JKbkQ7kNvgErDyYx&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AWdsHUeSZ4YkNc8XuH29sQ3&oh=00_AYBFT14XwO_KYrPeVX7Y2paNmxMUDIjbF0JDUxfMhYJpYw&oe=6779FEEA" target="_blank">
-        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/472129715_597042176072993_7246232661390529166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1pbaRl4JKbkQ7kNvgErDyYx&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AWdsHUeSZ4YkNc8XuH29sQ3&oh=00_AYBFT14XwO_KYrPeVX7Y2paNmxMUDIjbF0JDUxfMhYJpYw&oe=6779FEEA" alt="Image 2">
+        		<img id="gambar" width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/472129715_597042176072993_7246232661390529166_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=1pbaRl4JKbkQ7kNvgErDyYx&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=AWdsHUeSZ4YkNc8XuH29sQ3&oh=00_AYBFT14XwO_KYrPeVX7Y2paNmxMUDIjbF0JDUxfMhYJpYw&oe=6779FEEA" alt="Image 2">
     			</a>
 				</div>
-				<div class="item gambar3">
+				<div id="itemhover" class="item gambar3">
     			<a href="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4%20(2).jpeg" target="_blank">
-        		<video loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4" alt="Image 3">
+        		<video id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4" alt="Image 3">
     			</a>
 				</div>
-				<div class="item gambar4">
+				<div id="itemhover" class="item gambar4">
     			<a href="https://lucivver.github.io/Luciver/gambar%20(1).jpeg" target="_blank">
-        		<img width="400" src="https://lucivver.github.io/Luciver/gambar%20(1).jpeg" alt="Image 4">
+        		<img id="gambar" width="400" src="https://lucivver.github.io/Luciver/gambar%20(1).jpeg" alt="Image 4">
     			</a>
 				</div>
-				<div class="item gambar5">
+				<div id="itemhover" class="item gambar5">
     			<a href="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4%20(2).jpeg" target="_blank">
-        		<video loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4" alt="Image 5">
+        		<video id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4" alt="Image 5">
     			</a>
 				</div>
-				<div class="item gambar6">
+				<div id="gambar" id="itemhover" class="item gambar6">
     			<a href="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" target="_blank">
-        		<img width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" alt="Image 6">
+        		<img id="gambar" width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" alt="Image 6">
     			</a>
 				</div>
 </td>
