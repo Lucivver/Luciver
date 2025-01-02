@@ -95,7 +95,7 @@ p
 	background-color: red;
 	border-radius: 10px;
 	position: absolute;
-	left: max(calc(350px * 5), 100%);
+	left: max(calc(350px * 6), 100%);
 	animation-name: scrollleft;
 	animation-duration: 60s;
 	animation-timing-function: linear;
@@ -104,10 +104,21 @@ p
 	@media screen and (max-width: 767px) {
 	height: 200px;
 	width: 200px;
-	left: max(calc(130px * 5), 100%);
+	left: max(calc(140px * 6), 100%);
 	}
 }
 .item img
+{
+	width: 400px;
+	height: 400px;
+	border-radius: 10px;
+	@media screen and (max-width: 767px) {
+	border-radius: 10px;
+	height: 200px;
+	width: 200px;
+}
+}
+.item video
 {
 	width: 400px;
 	height: 400px;
@@ -148,52 +159,53 @@ p
 }
 
 .gambar1 {
-	animation-delay: calc(60s / 5 * (5 - 1) * -1);
+	animation-delay: calc(60s / 6 * (6 - 1) * -1);
 }
 .gambar2 {
-	animation-delay: calc(60s / 5 * (5 - 2) * -1);
+	animation-delay: calc(60s / 6 * (6 - 2) * -1);
 }
 .gambar3 {
-	animation-delay: calc(60s / 5 * (5 - 3) * -1);
+	animation-delay: calc(60s / 6 * (6 - 3) * -1);
 }
 .gambar4 {
-	animation-delay: calc(60s / 5 * (5 - 4) * -1);
+	animation-delay: calc(60s / 6 * (6 - 4) * -1);
 }
 .gambar5 {
-	animation-delay: calc(60s / 5 * (5 - 5) * -1);
+	animation-delay: calc(60s / 6 * (6 - 5) * -1);
+.gambar6 {
+	animation-delay: calc(60s / 6 * (6 - 6) * -1);
 }
-.gambar1:hover
+.gambar1:hover ,.gambar1:active
 {
 	transform: scale(1.1);
 	z-index: 1;
  	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
-.gambar2:hover
+.gambar2:hover,.gambar2:active
 {
 	transform: scale(1.1);
 	z-index: 2;
-	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-.gambar3:hover
+.gambar3:hover,.gambar3:active
 {
 	transform: scale(1.1);
 	z-index: 3;
-	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-.gambar4:hover
+.gambar4:hover,.gambar4:active
 {
 	transform: scale(1.1);
 	z-index: 4;
-	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-.gambar5:hover
+.gambar5:hover,.gambar5:active
 	{
 	transform: scale(1.1);
 	z-index: 5;
-	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-}
-.wrappasder:hover
-.item
-{
-	animation-play-state: paused;
-}}
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+.gambar6:hover,.gambar5\6:active
+	{
+	transform: scale(1.1);
+	z-index: 5;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
