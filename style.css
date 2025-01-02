@@ -24,6 +24,7 @@ html {
 }
 table
 {
+	padding-bottom: 10rem;
 	width: 20%;
 	align-items: center;
 	height: 1rem;
@@ -37,11 +38,22 @@ body
             margin: 0;
             background-color: #f0f0f0;
 }
+body:hover
+{
+	.item,.wrapper{
+	animation-play-state: running;}
+}
+body:table
+{
+	.item,.wrapper{
+	animation-play-state: running;}
+}
 .profile{
 table
 {
 	margin-left: auto;
 	margin-right: auto;
+	animation-play-state: running;
 }
 img
 {
@@ -85,6 +97,7 @@ p
     align-items: center;
     font-family: ptsansbold;
     margin: 0.5rem;
+
 }
 [Name="Tombol"]:hover
 {
@@ -104,11 +117,13 @@ p
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 
+
 	@media screen and (max-width: 767px) {
 	height: 200px;
 	width: 200px;
 	left: max(calc(140px * 6), 100%);
 	}
+	animation-play-state: running;
 }
 .item img
 {
@@ -119,6 +134,7 @@ p
 	border-radius: 10px;
 	height: 200px;
 	width: 200px;
+	animation-play-state: running;
 }
 }
 .item video
@@ -130,6 +146,8 @@ p
 	border-radius: 10px;
 	height: 200px;
 	width: 200px;
+	animation-play-state: running;
+
 }
 }
 .wrapper
@@ -140,14 +158,23 @@ p
 	max-width: 1546px;
 	margin-inline: auto;
 	height: 400px;
-	padding-top: 4rem;
 	margin-top: 5rem;
 	overflow: hidden;
 	border-radius: 10px;
-	padding-bottom: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	z-index:-1;
+	animation-play-state: running;
+		-webkit-mask-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0), 
+                rgba(0, 0, 0, 1) 40%,
+                rgba(0, 0, 0, 1) 100%
+            );
+            -webkit-mask-size: 100% 100%;
+            -webkit-mask-repeat: no-repeat;
 
 	@media screen and (max-width: 767px) {
-	padding-top: 3rem;
 		width: 90%;
 		height: 200px;
 		top: 28rem;
@@ -217,8 +244,36 @@ p
 }
 .wrapper:hover,.wrapper:active
 {
+	.item{
+	animation-play-state: paused;}
 	overflow-x: auto;
-.item
+	.item:not(:hover){
+	filter: grayscale(50%);
+	filter: blur(5px);
+	filter: brightness(50%);}
+	 scrollbar-width: none;
+}
+.item:hover,.item:active
 {
+	.item{
 	animation-play-state: paused;
+	overflow-x: auto;
+	-ms-overflow-style: none;
+	 scrollbar-width: none;
+}}
+
+
+.deskripsi
+{
+	transform: translateY(60rem);
+
+	position: absolute;
+	h1{
+	font-family: Belgietta;
+	font-weight: bold;
+	font-size: 60px;
+	z-index: 10;
+	transform: scale3d(1, 2, 3);
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
 }}
