@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior:smooth;
+}
 @font-face
 {
 	font-family: "Belgietta";
@@ -172,10 +175,11 @@ p
 }
 .gambar5 {
 	animation-delay: calc(60s / 6 * (6 - 5) * -1);
+}
 .gambar6 {
 	animation-delay: calc(60s / 6 * (6 - 6) * -1);
 }
-.gambar1:hover ,.gambar1:active
+.gambar1:hover,.gambar1:active
 {
 	transform: scale(1.1);
 	z-index: 1;
@@ -200,12 +204,21 @@ p
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 .gambar5:hover,.gambar5:active
-	{
+{
 	transform: scale(1.1);
 	z-index: 5;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-.gambar6:hover,.gambar5\6:active
+}
+.gambar6:hover,.gambar6:active
 	{
 	transform: scale(1.1);
-	z-index: 5;
+	z-index: 6;
 	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.wrapper:hover,.wrapper:active
+{
+	overflow-x: auto;
+.item
+{
+	animation-play-state: paused;
+}}
