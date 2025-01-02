@@ -14,7 +14,7 @@
         event.preventDefault();
     }
 }, { passive: false });
-
+  document.addEventListener('contextmenu', event => event.preventDefault());
 document.addEventListener('keydown', function(event) {
     if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '-' || event.key === '0')) {
         event.preventDefault();
@@ -91,7 +91,7 @@ document.addEventListener('keydown', function(event) {
 				</div>
 				<div id="itemhover" class="item gambar3">
     			<a href="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4%20(2).jpeg" target="_blank">
-        		<video id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4" alt="Image 3">
+        		<video controlslist="nodownload" id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid1.mp4" alt="Image 3">
     			</a>
 				</div>
 				<div id="itemhover" class="item gambar4">
@@ -100,8 +100,8 @@ document.addEventListener('keydown', function(event) {
     			</a>
 				</div>
 				<div id="itemhover" class="item gambar5">
-    			<a href="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4%20(2).jpeg" target="_blank">
-        		<video id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4" alt="Image 5">
+    			<a href="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4" target="_blank">
+        		<video controlslist="nodownload" id="gambar" loop autoplay muted width="400" src="https://github.com/Lucivver/Luciver/raw/refs/heads/main/vid2.mp4" alt="Image 5">
     			</a>
 				</div>
 				<div id="gambar" id="itemhover" class="item gambar6">
@@ -109,8 +109,12 @@ document.addEventListener('keydown', function(event) {
         		<img id="gambar" width="400" src="https://scontent.fbth6-1.fna.fbcdn.net/v/t39.30808-6/469310365_580117987765412_3059894982937090642_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=L59qU0UvxDgQ7kNvgHoMuGd&_nc_zt=23&_nc_ht=scontent.fbth6-1.fna&_nc_gid=ANrzDybRPAIa8UcL2ouyZt4&oh=00_AYD_4pCAdLc7j0blLqwFdbE0pvIDW7BDyaXsEbkGdHOb3Q&oe=677A12CA" alt="Image 6">
     			</a>
 				</div>
+				<div>
+					<button><audio autoplay played="Tombol" src="https"></audio>
+				</div>
 </td>
 </tr>
 </table>
+<div class="deskripsi"><h1>Artwork Carousel</h1></div>
 </body>
 </html>
